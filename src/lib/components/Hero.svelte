@@ -5,11 +5,11 @@
     import { mode } from "mode-watcher";
     import { onMount } from 'svelte';
 
-    let imageSrc = 'hero-image-light.jpg';
+    let imageSrc = 'hero-image-light.webp';
     
     onMount(() => {
         mode.subscribe(currentMode => {
-            imageSrc = currentMode === 'dark' ? 'hero-image-dark.jpg' : 'hero-image-light.jpg';
+            imageSrc = currentMode === 'dark' ? 'hero-image-dark.jpg' : 'hero-image-light.webp';
         });
     });
 
